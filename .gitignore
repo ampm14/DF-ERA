@@ -1,0 +1,65 @@
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+dist/
+build/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Flask / backend logs
+logs/
+*.log
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints/
+.notebooks_tmp/
+
+# Datasets, uploads, and results
+storage/uploads/
+storage/results/
+data/
+*.csv
+*.tsv
+*.jsonl
+
+# Model weights and checkpoints
+*.pt
+*.pth
+*.ckpt
+*.h5
+models/*
+!models/manifest.json   # keep manifest only, ignore weights
+
+# Experiments outputs
+experiments/**/checkpoints/
+experiments/**/runs/
+experiments/**/outputs/
+
+# Frontend (React + TypeScript) build artifacts
+frontend/node_modules/
+frontend/build/
+frontend/dist/
+frontend/.parcel-cache/
+frontend/.vite/
+frontend/.turbo/
+frontend/.next/
+
+# Frontend lockfiles 
+yarn.lock
+package-lock.json
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
